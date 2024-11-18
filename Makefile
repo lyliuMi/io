@@ -31,4 +31,4 @@ clean:
 	@for dir in $(SUB_DIR); do \
 		$(MAKE) -C $$dir clean; \
 	done 
-	rm -rf *.o $(app)
+	rm -rf *.o $(app) 2024*

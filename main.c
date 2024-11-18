@@ -6,11 +6,14 @@ extern File_handle* fh;
 
 void test01()
 {
-    init_file_handle(FILE_NAME);
+    init_file_handle();
 
-    char buf[FILE_LEN] = "hello, world\n";
+    char buf[1024] = "hello, world\n";
 
-    write_file_handle(fh, buf, strlen(buf));
+    while(1)
+    {
+        write_file_handle(fh, buf, strlen(buf));
+    }
 
     destory_file_handle(fh);
 }
