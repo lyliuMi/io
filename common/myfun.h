@@ -4,7 +4,6 @@
 #include <stdio.h>
 
 #define FILE_NAME_LEN 100
-#define FILE_NAME "test.txt"
 #define FILE_LENGTH 1024
 
 typedef struct File_handle
