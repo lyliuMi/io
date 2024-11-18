@@ -2,3 +2,8 @@
 *.o
 *.so
 *.a
+
+common/*.so
+common/*.a
+common/*.txt
+common/*.o
