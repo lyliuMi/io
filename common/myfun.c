@@ -50,7 +50,7 @@ int write_file_handle(File_handle* fh, void* buf, unsigned int len)
     
     if(fh->cur_file_length + len < FILE_LENGTH)
     {
-        if(!fwrite(buf, 1, len, fh->fp))
+        if(fwrite(buf, 1, len, fh->fp) < len)
         {
             fprintf(stderr, "write fp fail\n");
             return -1;
